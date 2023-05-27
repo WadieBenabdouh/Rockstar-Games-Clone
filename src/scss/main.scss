@@ -1,10 +1,23 @@
+// GLOBAL RESET CSS
+
 *,
 ::before,
 ::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+// GLOBAL RESET CSS END
 
 body {
     background-color: #0b0b0b;
@@ -58,3 +71,63 @@ header {
 }
 
 // HEADER END
+
+// MOBILE NAV
+.mobile-nav {
+    min-height: 100vh;
+    background: rgba(0, 0, 0, .85);
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: 1em 2em;
+
+    form {
+
+        label {
+            display: flex;
+            gap: 1em;
+            background-color: #111;
+            height: 3em;
+            border-radius: 4px;
+            width: 100%;
+
+            button {
+                background: none;
+                border: none;
+                color: #fff;
+                margin-left: 10px;
+                cursor: pointer;
+            }
+
+            input {
+                background: none;
+                border: none;
+                flex-grow: 1;
+                color: #fff;
+                font-size: 15px;
+                font-weight: bold;
+            }
+
+            input:focus {
+                outline: none;
+            }
+        }
+    }
+
+    ul {
+        // height: 90vh;
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+
+        li {
+            a {
+                color: #fff;
+                font-weight: bold;
+                font-size: 25px;
+            }
+        }
+    }
+}
+
+// MOBILE NAV END
