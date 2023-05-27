@@ -125,6 +125,15 @@ header {
                 color: #fff;
                 font-weight: bold;
                 font-size: 25px;
+                transition: all 0.3s;
+
+                svg {
+                    max-width: 17px;
+                }
+            }
+
+            a:hover {
+                color: #fcaf17;
             }
         }
     }

@@ -101,6 +101,13 @@ header .avatar-icon {
   color: #fff;
   font-weight: bold;
   font-size: 25px;
+  transition: all 0.3s;
+}
+.mobile-nav ul li a svg {
+  max-width: 17px;
+}
+.mobile-nav ul li a:hover {
+  color: #fcaf17;
 }
 
 /*# sourceMappingURL=/main.77bb5cfd.css.map */
