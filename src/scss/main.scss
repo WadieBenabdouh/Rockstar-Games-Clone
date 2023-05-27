@@ -36,6 +36,18 @@ header {
         }
     }
 
+    #menu-toggle.is-active :nth-child(1) {
+        transform: translateY(400%);
+    }
+
+    #menu-toggle.is-active :nth-child(2) {
+        opacity: 0;
+    }
+
+    #menu-toggle.is-active :nth-child(3) {
+        transform: translateY(-400%);
+    }
+
     .rockstar-logo {
         height: 2.3rem;
     }

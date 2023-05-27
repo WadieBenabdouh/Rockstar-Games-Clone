@@ -33,6 +33,15 @@ header #menu-toggle span {
   width: 2em;
   transition: all 0.3s;
 }
+header #menu-toggle.is-active :nth-child(1) {
+  transform: translateY(400%);
+}
+header #menu-toggle.is-active :nth-child(2) {
+  opacity: 0;
+}
+header #menu-toggle.is-active :nth-child(3) {
+  transform: translateY(-400%);
+}
 header .rockstar-logo {
   height: 2.3rem;
 }
