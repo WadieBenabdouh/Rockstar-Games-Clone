@@ -116,6 +116,18 @@ header .avatar-icon {
 
 .mobile-nav.in-action {
   right: 0;
+  /* BETTER THAN CJ*/
+}
+
+main {
+  overflow: hidden;
+}
+main .images-wrapper {
+  display: flex;
+  width: 400%;
+}
+main .images-wrapper img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=/main.77bb5cfd.css.map */

@@ -15,6 +15,7 @@ ul {
 a {
     text-decoration: none;
 }
+
 // GLOBAL RESET CSS END
 
 body {
@@ -67,6 +68,7 @@ header {
         height: 2.2em;
     }
 }
+
 // HEADER END
 
 // MOBILE NAV
@@ -140,8 +142,26 @@ header {
         }
     }
 }
-.mobile-nav.in-action{
+
+.mobile-nav.in-action {
     right: 0;
-    // BETTER THAN CJ
+    /* BETTER THAN CJ*/
 }
+
 // MOBILE NAV END
+
+// MAIN
+main {
+    overflow: hidden;
+
+    .images-wrapper {
+        display: flex;
+        width: 400%;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+// MAIN END
