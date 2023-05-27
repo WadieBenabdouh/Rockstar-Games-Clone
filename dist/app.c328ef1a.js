@@ -119,8 +119,10 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   return newRequire;
 })({"app.js":[function(require,module,exports) {
 var menu_btn = document.querySelector("#menu-toggle");
+var mobile_menu = document.querySelector(".mobile-nav");
 menu_btn.onclick = function () {
   menu_btn.classList.toggle("is-active");
+  mobile_menu.classList.toggle("in-action");
 };
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
