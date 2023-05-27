@@ -1,11 +1,48 @@
-$red : red;
-
-*, ::before, ::after{
-    margin:0;
-    padding:0;
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-h3{
-    color: $red;
+body {
+    background-color: #0b0b0b;
 }
+
+//HEADER
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+
+    #menu-toggle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        gap: 6px;
+        z-index: 100;
+
+        span {
+            display: block;
+            height: 2px;
+            background: #ffffff;
+            width: 2em;
+            transition: all 0.3s;
+        }
+    }
+
+    .rockstar-logo {
+        height: 2.3rem;
+    }
+
+    .avatar-icon {
+        height: 2.2em;
+    }
+}
+
+// HEADER END
