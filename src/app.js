@@ -58,5 +58,3 @@ function handleClick(event) {
 links.forEach((link) => {
   link.addEventListener("click", handleClick);
 });
-
-//SLIDER X H1
