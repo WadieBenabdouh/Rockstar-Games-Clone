@@ -268,6 +268,8 @@ article {
 
             img {
                 width: 100%;
+                border: solid 1px #282828;
+                border-radius: 10px;
             }
 
             .details {
@@ -280,7 +282,9 @@ article {
                     display: flex;
                     gap: 1em;
                     align-items: center;
-
+                    :nth-child(1){
+                        color: #e8e8e8;
+                    }
                     :nth-child(2) {
                         color: #979797;
                     }

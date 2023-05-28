@@ -215,6 +215,8 @@ article .cards .card {
 }
 article .cards .card img {
   width: 100%;
+  border: solid 1px #282828;
+  border-radius: 10px;
 }
 article .cards .card .details {
   display: flex;
@@ -226,6 +228,9 @@ article .cards .card .details .metadata {
   display: flex;
   gap: 1em;
   align-items: center;
+}
+article .cards .card .details .metadata :nth-child(1) {
+  color: #e8e8e8;
 }
 article .cards .card .details .metadata :nth-child(2) {
   color: #979797;
