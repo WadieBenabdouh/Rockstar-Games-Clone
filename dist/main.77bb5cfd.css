@@ -124,7 +124,7 @@ header .avatar-icon {
 
 main {
   overflow: hidden;
-  min-height: 29em;
+  min-height: 32em;
   background-color: #000000;
 }
 main .images-wrapper {
@@ -152,7 +152,7 @@ main .info h5 {
 }
 main .info h3 {
   color: #fff;
-  font-size: 1.753rem;
+  font-size: 1.85rem;
   line-height: 1.1;
 }
 main .info button {
