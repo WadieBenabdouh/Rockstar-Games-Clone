@@ -14,20 +14,30 @@ const btn3 = document.querySelector(".btn3");
 const btn4 = document.querySelector(".btn4");
 const img1 = document.querySelector(".img1");
 
+const myHeading = document.querySelector(".myHeading");
+
 btn1.addEventListener("click", () => {
   img1.style.marginLeft = "0";
+  firstSlide = "Los Santos Drug Wars The Last Dose Out Now";
+  myHeading.textContent = firstSlide;
 });
 
 btn2.addEventListener("click", () => {
   img1.style.marginLeft = "-20%";
+  secondSlide = "The New Eclipse Blvd Garage";
+  myHeading.textContent = secondSlide;
 });
 
 btn3.addEventListener("click", () => {
   img1.style.marginLeft = "-40%";
+  thirdSlide = "Los Santos Drug Wars Now Available";
+  myHeading.textContent = thirdSlide;
 });
 
 btn4.addEventListener("click", () => {
   img1.style.marginLeft = "-60%";
+  fourthSlide = "The Criminal Enterprises Now Available";
+  myHeading.textContent = fourthSlide;
 });
 
 //slider accent
@@ -48,3 +58,5 @@ function handleClick(event) {
 links.forEach((link) => {
   link.addEventListener("click", handleClick);
 });
+
+//SLIDER X H1
