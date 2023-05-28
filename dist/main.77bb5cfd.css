@@ -215,7 +215,6 @@ article .cards .card {
 }
 article .cards .card img {
   width: 100%;
-  border: solid 1px #282828;
   border-radius: 10px;
 }
 article .cards .card .details {
@@ -242,6 +241,7 @@ aside {
   padding-inline: 2em;
   padding-top: 5em;
   gap: 1.5em;
+  padding-bottom: 2em;
 }
 aside h2 {
   color: #fff;
@@ -249,11 +249,27 @@ aside h2 {
 aside .games {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1em;
+  gap: 1.5em;
 }
 aside .games .game img {
   max-width: 100%;
   border-radius: 10px;
+}
+aside a {
+  align-self: center;
+  color: #fff;
+  text-decoration: underline #fcaf17;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 3px;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+aside a:hover {
+  background-color: #fcaf17;
+  color: #161616;
+  padding: 5px;
+  border-radius: 10px;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=/main.77bb5cfd.css.map */

@@ -268,7 +268,6 @@ article {
 
             img {
                 width: 100%;
-                border: solid 1px #282828;
                 border-radius: 10px;
             }
 
@@ -295,32 +294,52 @@ article {
         }
     }
 }
+
 // ARTICLE END
 
 // ASIDE
-aside{
+aside {
     display: flex;
     flex-direction: column;
     padding-inline: 2em;
     padding-top: 5em;
     gap: 1.5em;
+    padding-bottom: 2em;
 
-    h2{
+    h2 {
         color: #fff;
     }
 
-    .games{
+    .games {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 1em;
+        gap: 1.5em;
 
-        .game{
+        .game {
 
-            img{
+            img {
                 max-width: 100%;
                 border-radius: 10px;
             }
         }
+    }
+
+    a {
+        align-self: center;
+        color: #fff;
+        text-decoration: underline #fcaf17;
+        text-underline-offset: 2px;
+        text-decoration-thickness: 3px;
+        font-weight: bold;
+        transition: all 0.3s;
+    }
+
+    a:hover {
+        background-color: #fcaf17;
+        color: #161616;
+        padding: 5px;
+        border-radius: 10px;
+        text-decoration: none;
     }
 }
 // ASIDE END
