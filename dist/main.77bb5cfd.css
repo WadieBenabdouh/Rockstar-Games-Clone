@@ -69,6 +69,7 @@ header .avatar-icon {
   width: 100%;
   right: 100%;
   transition: all 0.2s;
+  z-index: 99;
 }
 .mobile-nav form label {
   display: flex;
@@ -121,13 +122,69 @@ header .avatar-icon {
 
 main {
   overflow: hidden;
+  height: 32em;
+  background-color: #000000;
 }
 main .images-wrapper {
   display: flex;
-  width: 400%;
+  width: 500%;
+  height: fit-content;
+  overflow: hidden;
+}
+main .images-wrapper .slide {
+  width: 20%;
+  transition: 0.5s;
 }
 main .images-wrapper img {
   width: 100%;
+}
+main .info {
+  position: relative;
+  padding: 1em 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+main .info h5 {
+  color: #fff;
+}
+main .info h1 {
+  color: #fff;
+  line-height: 1;
+}
+main .info button {
+  cursor: pointer;
+  margin-top: 1em;
+  padding: 10px;
+  font-weight: bold;
+  background-color: #000000;
+  color: #fff;
+  font-size: 1rem;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+main .info button:hover {
+  background-color: #fcaf17;
+  color: #161616;
+  border-color: #fcaf17;
+}
+main .buttons {
+  position: absolute;
+  top: 17em;
+  left: 9%;
+  display: flex;
+  gap: 0.2em;
+}
+main .buttons a {
+  height: 2px;
+  width: 1.5em;
+  margin: 0 5px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+main a.active {
+  background-color: #ffe605;
 }
 
 /*# sourceMappingURL=/main.77bb5cfd.css.map */

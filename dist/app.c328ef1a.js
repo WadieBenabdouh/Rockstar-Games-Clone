@@ -118,12 +118,48 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"app.js":[function(require,module,exports) {
+//burger utilities
 var menu_btn = document.querySelector("#menu-toggle");
 var mobile_menu = document.querySelector(".mobile-nav");
 menu_btn.onclick = function () {
   menu_btn.classList.toggle("is-active");
   mobile_menu.classList.toggle("in-action");
 };
+
+//images carousel
+var btn1 = document.querySelector(".btn1");
+var btn2 = document.querySelector(".btn2");
+var btn3 = document.querySelector(".btn3");
+var btn4 = document.querySelector(".btn4");
+var img1 = document.querySelector(".img1");
+btn1.addEventListener("click", function () {
+  img1.style.marginLeft = "0";
+});
+btn2.addEventListener("click", function () {
+  img1.style.marginLeft = "-20%";
+});
+btn3.addEventListener("click", function () {
+  img1.style.marginLeft = "-40%";
+});
+btn4.addEventListener("click", function () {
+  img1.style.marginLeft = "-60%";
+});
+
+//slider accent
+var links = document.querySelectorAll("a");
+function handleClick(event) {
+  var clickedLink = event.target;
+  links.forEach(function (link) {
+    if (link === clickedLink) {
+      link.classList.add("active");
+    } else {
+      link.classList.remove("active");
+    }
+  });
+}
+links.forEach(function (link) {
+  link.addEventListener("click", handleClick);
+});
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
