@@ -25,9 +25,10 @@ body {
 //HEADER
 header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     height: 60px;
+    padding-inline: 1.9em;
 
     #menu-toggle {
         display: flex;
@@ -43,7 +44,7 @@ header {
             display: block;
             height: 2px;
             background: #ffffff;
-            width: 2em;
+            width: 1.9em;
             transition: all 0.3s;
         }
     }
@@ -66,6 +67,7 @@ header {
 
     .avatar-icon {
         height: 2.2em;
+        cursor: pointer;
     }
 }
 
@@ -154,7 +156,7 @@ header {
 // MAIN
 main {
     overflow: hidden;
-    height: 33.5em;
+    min-height: 29em;
     background-color: #000000;
 
     .images-wrapper {
@@ -178,16 +180,17 @@ main {
         padding: 1em 2em;
         display: flex;
         flex-direction: column;
-        gap: 1.5em;
+        gap: 1em;
 
 
         h5 {
             color: #fff;
         }
 
-        h1 {
+        h3 {
             color: #fff;
-            line-height: 1;
+            font-size: 1.753rem;
+            line-height: 1.1;
         }
 
         button {
@@ -211,8 +214,9 @@ main {
     }
 
     .buttons {
-        position: absolute;
-        top: 17em;
+        position: sticky;
+        margin-top: 13px;
+        // top: 35em;
         left: 9%;
         display: flex;
         gap: .2em;
