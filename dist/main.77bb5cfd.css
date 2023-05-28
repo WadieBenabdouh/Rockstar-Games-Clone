@@ -190,4 +190,45 @@ main a.active {
   background-color: #ffe605;
 }
 
+article {
+  padding-top: 2em;
+  padding-inline: 2em;
+  background-color: #0b0b0b;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+article h2 a {
+  text-decoration: none;
+  color: #fff;
+}
+article .cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2em;
+}
+article .cards .card {
+  border: solid 1px #282828;
+  border-radius: 10px;
+  background-color: #000000;
+  color: #fff;
+}
+article .cards .card img {
+  width: 100%;
+}
+article .cards .card .details {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 2em 1.5em;
+}
+article .cards .card .details .metadata {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+article .cards .card .details .metadata :nth-child(2) {
+  color: #979797;
+}
+
 /*# sourceMappingURL=/main.77bb5cfd.css.map */

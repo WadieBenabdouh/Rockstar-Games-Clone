@@ -15,6 +15,7 @@ ul {
 a {
     text-decoration: none;
 }
+
 // GLOBAL RESET CSS END
 
 body {
@@ -69,6 +70,7 @@ header {
         cursor: pointer;
     }
 }
+
 // HEADER END
 
 // MOBILE NAV
@@ -148,6 +150,7 @@ header {
     right: 0;
     /* BETTER THAN CJ*/
 }
+
 // MOBILE NAV END
 
 // MAIN
@@ -233,8 +236,58 @@ main {
     }
 
 }
+
 // MAIN END
 
 // ARTICLE 
+article {
+    padding-top: 2em;
+    padding-inline: 2em;
+    background-color: #0b0b0b;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+
+    h2 {
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2em;
+
+        .card {
+            border: solid 1px #282828;
+            border-radius: 10px;
+            background-color: #000000;
+            color: #fff;
+
+            img {
+                width: 100%;
+            }
+
+            .details {
+                display: flex;
+                flex-direction: column;
+                gap: 1em;
+                padding: 2em 1.5em;
+
+                .metadata {
+                    display: flex;
+                    gap: 1em;
+                    align-items: center;
+
+                    :nth-child(2) {
+                        color: #979797;
+                    }
+                }
+            }
+        }
+    }
+}
 
 // ARTICLE END
