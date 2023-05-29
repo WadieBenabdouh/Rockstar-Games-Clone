@@ -19,6 +19,10 @@ body {
   background-color: #0b0b0b;
 }
 
+body.active {
+  overflow: hidden;
+}
+
 header {
   display: flex;
   justify-content: space-between;

@@ -121,9 +121,11 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 //burger utilities
 var menu_btn = document.querySelector("#menu-toggle");
 var mobile_menu = document.querySelector(".mobile-nav");
+var overlayOne = document.querySelector("body");
 menu_btn.onclick = function () {
   menu_btn.classList.toggle("is-active");
   mobile_menu.classList.toggle("in-action");
+  overlayOne.classList.toggle("active");
 };
 
 //images carousel
@@ -194,7 +196,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50335" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50488" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
