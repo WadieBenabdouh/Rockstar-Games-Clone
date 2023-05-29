@@ -4,6 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
+    "start": "npm run dev",
     "dev": "parcel src/index.html",
     "build": "parcel build src/index.html --no-minify"
   },
