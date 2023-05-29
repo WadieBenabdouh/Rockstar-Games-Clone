@@ -16,7 +16,8 @@ Rockstar Games website clone using pure HTML, Javascript and SCSS
 
 ### My Performance >
 
-![image](https://github.com/WadieBenabdouh/Rockstar-Games-Clone/assets/82994425/f8c9155f-d049-4096-8d63-8dfade530dbe)
+![image](https://github.com/WadieBenabdouh/Rockstar-Games-Clone/assets/82994425/58406026-e416-4406-b5fe-b6ca7cebb39c)
+
 
 ### Rockstar's Performance >
 
