@@ -395,25 +395,24 @@ footer {
             }
         }
 
-        .languages{
+        .languages {
             display: flex;
             align-items: center;
             align-self: flex-start;
             gap: 1em;
 
-            svg{
+            svg {
                 color: #ffffff;
             }
 
-            select{
+            select {
                 background: none;
                 outline: none;
                 border: none;
                 color: #000000;
                 font-size: 15px;
-                transition: all 0.3s;
-
             }
+
         }
     }
 }
