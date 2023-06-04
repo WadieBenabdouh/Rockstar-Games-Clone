@@ -368,8 +368,11 @@ aside {
 
 // FOOTER
 footer {
-    background-color: #dd4646;
+    background-color: #000000;
     padding: 3em 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
 
     .wrapper-one {
         display: flex;
@@ -391,6 +394,15 @@ footer {
                         }
                     }
 
+                    :nth-child(3) {
+
+                        svg {
+                            max-width: 15px;
+                            position: relative;
+                            top: 2px;
+                        }
+                    }
+
                 }
             }
         }
@@ -400,19 +412,50 @@ footer {
             align-items: center;
             align-self: flex-start;
             gap: 1em;
+            padding: 5px;
 
             svg {
                 color: #ffffff;
             }
 
             select {
-                background: none;
+                background: #000;
                 outline: none;
                 border: none;
-                color: #000000;
+                color: #fff;
                 font-size: 15px;
             }
 
+        }
+
+        .languages:hover {
+            border: solid 1px #fff;
+        }
+
+        //accessibility for languages
+        .languages:focus {
+            border: solid 1px #fff;
+        }
+    }
+
+    .social-media {
+
+        ul {
+            display: flex;
+            justify-content: flex-start;
+            gap: 2em;
+
+            li {
+
+                a {
+                    text-decoration: none;
+
+                    svg {
+                        max-width: 17px;
+                        color: #fff;
+                    }
+                }
+            }
         }
     }
 }
