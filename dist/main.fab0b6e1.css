@@ -1,0 +1,370 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #0b0b0b;
+}
+
+body.active {
+  overflow: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding-inline: 1.9em;
+  background: rgba(0, 0, 0, 0.85);
+}
+header #menu-toggle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  gap: 6px;
+  z-index: 100;
+}
+header #menu-toggle span {
+  display: block;
+  height: 2px;
+  background: #ffffff;
+  width: 1.9em;
+  transition: all 0.3s;
+}
+header #menu-toggle.is-active :nth-child(1) {
+  transform: translateY(400%);
+}
+header #menu-toggle.is-active :nth-child(2) {
+  opacity: 0;
+}
+header #menu-toggle.is-active :nth-child(3) {
+  transform: translateY(-400%);
+}
+header .rockstar-logo {
+  height: 2.3rem;
+}
+header .avatar-icon {
+  height: 2.2em;
+  cursor: pointer;
+}
+
+.mobile-nav {
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.96);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  padding: 1em 2em;
+  position: fixed;
+  width: 100%;
+  right: 100%;
+  transition: all 0.2s;
+  z-index: 99;
+}
+.mobile-nav form label {
+  display: flex;
+  gap: 1em;
+  background-color: #111;
+  height: 3em;
+  border-radius: 4px;
+  width: 100%;
+}
+.mobile-nav form label button {
+  background: none;
+  border: none;
+  color: #fff;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.mobile-nav form label input {
+  background: none;
+  border: none;
+  flex-grow: 1;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+}
+.mobile-nav form label input:focus {
+  outline: none;
+}
+.mobile-nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+.mobile-nav ul li a {
+  color: #fff;
+  font-weight: bold;
+  font-size: 25px;
+  transition: all 0.3s;
+}
+.mobile-nav ul li a svg {
+  max-width: 17px;
+}
+.mobile-nav ul li a:hover {
+  color: #fcaf17;
+}
+
+.mobile-nav.in-action {
+  right: 0;
+  /* BETTER THAN CJ*/
+}
+
+main {
+  overflow: hidden;
+  min-height: 31em;
+  background-color: #000000;
+}
+main .images-wrapper {
+  display: flex;
+  width: 500%;
+  height: fit-content;
+  overflow: hidden;
+}
+main .images-wrapper .slide {
+  width: 20%;
+  transition: 0.5s;
+}
+main .images-wrapper img {
+  width: 100%;
+}
+main .info {
+  position: relative;
+  padding: 1em 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+main .info h5 {
+  color: #fff;
+}
+main .info h3 {
+  color: #fff;
+  font-size: 1.85rem;
+  line-height: 1.1;
+}
+main .info .watch-video {
+  cursor: pointer;
+  margin-top: 1em;
+  padding: 10px;
+  background-color: #000000;
+  font-size: 1rem;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  transition: all 0.2s;
+  text-align: center;
+}
+main .info .watch-video button {
+  border: none;
+  background: none;
+  color: #fff;
+  font-weight: bold;
+  transition: all 0.3s;
+  font-size: 1rem;
+}
+main .info .watch-video button:hover {
+  color: #000000;
+}
+main .info .watch-video:hover {
+  background-color: #fcaf17;
+  border-color: #fcaf17;
+}
+main .info .watch-video:hover button {
+  color: #000000;
+}
+main .buttons {
+  position: sticky;
+  margin-top: 13px;
+  left: 9%;
+  display: flex;
+  gap: 0.2em;
+}
+main .buttons a {
+  height: 2px;
+  width: 1.5em;
+  margin: 0 5px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+main a.active {
+  background-color: #ffe605;
+}
+
+article {
+  padding-top: 2em;
+  padding-inline: 2em;
+  background-color: #0b0b0b;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+article h2 a {
+  text-decoration: none;
+  color: #fff;
+}
+article .cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2em;
+}
+article .cards .card {
+  border: solid 1px #282828;
+  border-radius: 10px;
+  background-color: #000000;
+  color: #fff;
+}
+article .cards .card img {
+  width: 100%;
+  border-radius: 10px;
+}
+article .cards .card .details {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 2em 1.5em;
+}
+article .cards .card .details .metadata {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+article .cards .card .details .metadata :nth-child(1) {
+  color: #e8e8e8;
+}
+article .cards .card .details .metadata :nth-child(2) {
+  color: #979797;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  padding-inline: 2em;
+  padding-top: 5em;
+  gap: 1.5em;
+  padding-bottom: 2em;
+}
+aside h2 {
+  color: #fff;
+}
+aside .games {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5em;
+}
+aside .games .game img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+aside a {
+  align-self: center;
+  color: #fff;
+  text-decoration: underline #fcaf17;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 3px;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+aside a:hover {
+  background-color: #fcaf17;
+  color: #161616;
+  padding: 5px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #000000;
+  padding: 3em 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+footer .wrapper-one {
+  display: flex;
+  justify-content: space-between;
+}
+footer .wrapper-one .links nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+footer .wrapper-one .links nav ul li a {
+  color: #fff;
+  font-weight: bold;
+}
+footer .wrapper-one .links nav ul :nth-child(3) svg {
+  max-width: 15px;
+  position: relative;
+  top: 2px;
+}
+footer .wrapper-one .languages {
+  display: flex;
+  align-items: center;
+  align-self: flex-start;
+  gap: 1em;
+  padding: 5px;
+}
+footer .wrapper-one .languages svg {
+  color: #ffffff;
+}
+footer .wrapper-one .languages select {
+  background: #000;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-size: 15px;
+}
+footer .wrapper-one .languages:hover {
+  border: solid 1px #fff;
+}
+footer .wrapper-one .languages:focus {
+  border: solid 1px #fff;
+}
+footer .social-media ul {
+  display: flex;
+  justify-content: flex-start;
+  gap: 2em;
+}
+footer .social-media ul li a {
+  text-decoration: none;
+}
+footer .social-media ul li a svg {
+  max-width: 17px;
+  color: #fff;
+}
+footer .company {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  gap: 1em;
+  font-size: 13px;
+  font-weight: bold;
+}
+footer .company a {
+  color: #fff;
+}
+footer .company .row-two ul {
+  display: flex;
+  gap: 1em;
+}
+
+/*# sourceMappingURL=/main.fab0b6e1.css.map */
